@@ -14,16 +14,14 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("index")
-public class TestController
-{
+public class TestController {
 
     @Autowired
-    UserServiceFeign userServiceFeign;
+    private UserServiceFeign userServiceFeign;
 
     @GetMapping(value = "/helloworld")
-    public String create()
-    {
-     return userServiceFeign.getUserName();
+    public String create() {
+        return userServiceFeign.getUserName();
     }
 
 
