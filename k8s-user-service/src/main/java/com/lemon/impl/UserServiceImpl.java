@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @modified By：
  */
 @RestController
-public class IUserServiceImpl implements IUserServiceApi {
+public class UserServiceImpl implements IUserServiceApi {
 
     @Override
     public String getUserName() {
