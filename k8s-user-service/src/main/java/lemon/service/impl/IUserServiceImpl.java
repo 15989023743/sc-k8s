@@ -1,7 +1,6 @@
-package com.lemon.service.impl;
+package lemon.service.impl;
 
 import com.lemon.service.IUserServiceApi;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
