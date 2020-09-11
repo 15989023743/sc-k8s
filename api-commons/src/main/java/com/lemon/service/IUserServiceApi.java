@@ -1,18 +1,18 @@
 package com.lemon.service;
 
 
-import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-@FeignClient(value = "user-service")
-public interface UserServiceFeign {
+@RequestMapping("/api/user")
+public interface IUserServiceApi {
 
     /**
      * 获取用户名称
      *
      * @return
      */
-    @GetMapping(value = "/user/getUserName")
+    @GetMapping(value = "/getUserName")
     String getUserName();
 
 }

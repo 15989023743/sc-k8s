@@ -1,8 +1,7 @@
 package com.lemon.service.impl;
 
-import com.lemon.service.UserServiceFeign;
+import com.lemon.service.IUserServiceApi;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -12,10 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @modified By：
  */
 @RestController
-public class UserServiceImpl implements UserServiceFeign {
+public class IUserServiceImpl implements IUserServiceApi {
 
     @Override
-    @GetMapping(value = "/user/getUserName")
     public String getUserName() {
         return "hello world";
     }
