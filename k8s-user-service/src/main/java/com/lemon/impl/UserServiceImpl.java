@@ -14,6 +14,6 @@ public class UserServiceImpl implements IUserServiceApi {
 
     @Override
     public String getUserName() {
-        return "hello world";
+        return "hello feign";
     }
 }
